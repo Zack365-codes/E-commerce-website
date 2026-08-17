@@ -1,0 +1,1056 @@
+/* =========================
+   NAVBAR
+========================= */
+
+
+#nav-bar {
+    background: linear-gradient(rgba(0, 0, 0, 0.586),
+            rgba(0, 0, 0, 0.586)), url(./images/hero-bg.jpg);
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fruit-navbar {
+    width: 100%;
+    min-height: 100px;
+
+    /* Transparent background
+    background: rgba(255, 255, 255, 0.08); */
+
+
+}
+
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-icon {
+    color: #ff7a00;
+    font-size: 42px;
+}
+
+.logo-title {
+    color: #ff7a00;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.logo-subtitle {
+    color: #ff7a00;
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 1;
+}
+
+
+/* =========================
+   NAV LINKS
+========================= */
+
+.fruit-navbar .nav-link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+
+    padding: 35px 20px !important;
+
+    transition: 0.3s;
+}
+
+.fruit-navbar .nav-link:hover {
+    color: #ff7a00;
+}
+
+.fruit-navbar .nav-link.active {
+    color: #ff7a00;
+}
+
+
+/* =========================
+   RIGHT ICONS
+========================= */
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar-actions a {
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.navbar-actions a:hover {
+    color: #ff7a00;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+.navbar-toggler {
+    border: 1px solid rgba(255, 255, 255, .4);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+
+@media (max-width: 991px) {
+
+    .fruit-navbar {
+        min-height: 80px;
+    }
+
+    .logo-icon {
+        font-size: 32px;
+    }
+
+    .logo-title {
+        font-size: 27px;
+    }
+
+    .logo-subtitle {
+        font-size: 11px;
+    }
+
+    .fruit-navbar .nav-link {
+        padding: 12px 0 !important;
+        text-align: center;
+    }
+
+    .fruit-navbar .navbar-collapse {
+        margin-top: 10px;
+        padding: 15px;
+
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 8px;
+    }
+
+    .navbar-actions {
+        justify-content: center;
+        margin-top: 15px;
+        padding-bottom: 10px;
+    }
+}
+
+.hero-content {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+/* -----------Hero heading--------------- */
+h1 span {
+    color: #ff8419;
+    letter-spacing: 6px;
+    font-size: 16px;
+
+}
+
+.hero-heading h1 {
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+
+}
+
+/* Large Desktop */
+@media (min-width: 1400px) {
+    .hero-heading h1 {
+        font-size: 64px;
+    }
+}
+
+/* Desktop / Laptop */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .hero-heading h1 {
+        font-size: 58px;
+    }
+}
+
+/* Small Laptop / Tablet Landscape */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hero-heading h1 {
+        font-size: 52px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-heading h1 {
+        font-size: 46px;
+    }
+}
+
+/* Mobile */
+@media (min-width: 576px) and (max-width: 767px) {
+    .hero-heading h1 {
+        font-size: 40px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 575px) {
+    .hero-heading h1 {
+        font-size: 34px;
+    }
+}
+
+/* -------Hero buttons------------ */
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons a {
+    height: 47px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/* Fruit Collection */
+.btn-primary {
+    min-width: 152px;
+    background: #ff8419;
+    color: #fff;
+    border: 2px solid #ff8419;
+}
+
+/* Contact Us */
+.btn-outline {
+    min-width: 129px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #ff8419;
+}
+
+/* Hover */
+.btn-primary:hover {
+    background: #e96f08;
+    border-color: #e96f08;
+}
+
+.btn-outline:hover {
+    background: #ff8419;
+    color: #fff;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+
+
+.feature-icon {
+    background-color: #f5f5f5;
+    width: 68px;
+    height: 68px;
+    min-width: 68px;
+
+    border: 2px dotted #ff8a1c;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ff8a1c;
+    font-size: 25px;
+    flex-shrink: 0;
+}
+
+.features h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #07111f;
+    text-align: left;
+}
+
+.features p {
+    font-size: 15px;
+    color: #53616d;
+    text-align: left;
+}
+
+/* Extra safety for small devices to strictly keep elements left-aligned */
+@media (max-width: 767.98px) {
+    .features .d-flex {
+        justify-content: flex-start !important;
+    }
+}
+
+/* =========================
+   OUR PRODUCTS
+========================= */
+
+.products {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+/* Section & Titles */
+.section-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #ff8a1c;
+}
+
+.section-title span {
+    color: #07111f;
+}
+
+.section-subtitle {
+    max-width: 550px;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* Card Styling - Fixed border & shadow */
+.product-card {
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+/* Image sizing matching reference height */
+.product-img {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img img {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Typography matching original bold styling */
+.product-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #07111f;
+}
+
+.product-unit {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.product-price {
+    font-size: 32px;
+    font-weight: 800;
+    color: #07111f;
+}
+
+/* Orange Pill Button - Fixed width & background */
+.btn-cart {
+    background-color: #ff8a1c !important;
+    color: #ffffff !important;
+    border-radius: 50px !important;
+    padding: 10px 28px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    border: none !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(255, 138, 28, 0.3);
+}
+
+.btn-cart:hover {
+    background-color: #e0740f !important;
+}
+
+/* =========================
+   DEAL
+========================= */
+
+
+/* Main Section Background */
+.deal-section {
+    background-color: #f5f5f5;
+}
+
+/* Image Wrapper and Discount Badge Styling */
+.deal-img-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.deal-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 120px;
+    height: 120px;
+    background-color: #ff8a1c;
+    border: 5px solid #f29a41;
+    /* Outer ring effect */
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    box-shadow: 0 4px 15px rgba(255, 138, 28, 0.3);
+}
+
+.badge-percent {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.badge-text {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/* Typography */
+.deal-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #ff8a1c;
+}
+
+.deal-title span {
+    color: #07111f;
+}
+
+.deal-subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: #07111f;
+    letter-spacing: 0.5px;
+}
+
+.deal-description {
+    color: #53616d;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 520px;
+}
+
+/* Countdown Timer Styling */
+.timer-box {
+    width: 70px;
+    height: 75px;
+    border: 2px solid #ff8a1c;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.timer-number {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ff8a1c;
+    line-height: 1;
+}
+
+.timer-label {
+    font-size: 12px;
+    color: #333333;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+/* Orange Pill Button */
+.deal-content .btn-cart {
+    background-color: #ff8a1c !important;
+    color: #ffffff !important;
+    border-radius: 50px !important;
+    padding: 10px 30px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    border: none !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(255, 138, 28, 0.3);
+}
+
+.deal-content .btn-cart:hover {
+    background-color: #e0740f !important;
+}
+
+/* Mobile responsive tweak for badge size */
+@media (max-width: 576px) {
+    .discount-badge {
+        width: 90px;
+        height: 90px;
+        top: 0;
+        left: 0;
+    }
+
+    .badge-percent {
+        font-size: 18px;
+    }
+
+    .badge-text {
+        font-size: 10px;
+    }
+
+    .deal-title {
+        font-size: 30px;
+    }
+}
+
+/* =========================
+   TESTINOMIAL
+========================= */
+.testimonial-section {
+    background-color: #ffffff;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.testimonial-card {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Avatar Image */
+.avatar-wrapper {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Text Styling */
+.author-name {
+    font-size: 22px;
+    font-weight: 800;
+    color: #07111f;
+    margin-bottom: 4px;
+}
+
+.author-title {
+    font-size: 14px;
+    color: #888888;
+    font-weight: 600;
+}
+
+.testimonial-quote {
+    font-size: 16px;
+    font-style: italic;
+    color: #777777;
+    line-height: 1.8;
+    max-width: 680px;
+    margin: 0 auto 20px auto;
+}
+
+/* Quote Icon at Bottom */
+.quote-icon {
+    font-size: 32px;
+    color: #cccccc;
+}
+
+/* Custom Splide Dots Styling */
+.splide__pagination {
+    bottom: -30px;
+}
+
+.splide__pagination__page {
+    background: #dddddd;
+}
+
+.splide__pagination__page.is-active {
+    background: #ff8a1c;
+    transform: scale(1.2);
+}
+
+/* =========================
+   About Section
+========================= */
+
+.about-section {
+    background-color: #ffffff;
+}
+
+
+/* Typography */
+.about-content .subtitle {
+    font-size: 14px;
+    color: #53616d;
+    font-weight: 500;
+}
+
+.about-content .title {
+    font-size: 40px;
+    font-weight: 800;
+    color: #07111f;
+}
+
+.about-content .title span {
+    color: #f28123;
+}
+
+.about-content .description {
+    font-size: 15px;
+    color: #53616d;
+    line-height: 1.7;
+}
+
+/* Button Styling */
+.btn-know-more {
+    background-color: #f28123;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 12px 32px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: lowercase;
+    display: inline-block;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-know-more:hover {
+    background-color: #07111f;
+    color: #ffffff;
+}
+
+/* Mobile responsive tweak */
+@media (max-width: 991.98px) {
+    .about-content .title {
+        font-size: 32px;
+    }
+}
+
+/* =========================
+   Sale Section
+========================= */
+#sale {
+    background-image: url('./images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 80vh;
+    padding: 60px 0;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+/* Heading Styling */
+.sale-content h2 {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+}
+
+.sale-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #07111f;
+    line-height: 1.2;
+}
+
+
+
+.sale-title span {
+    color: #ff8a1c;
+}
+
+/* Offer Badges Layout */
+.sale-offer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sale-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #07111f;
+    line-height: 1.1;
+}
+
+.discount-price {
+    font-size: 56px;
+    font-weight: 800;
+    color: #ff8a1c;
+    line-height: 1;
+}
+
+.off-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #07111f;
+    align-self: flex-end;
+    margin-bottom: 8px;
+}
+
+/* Shop Now Button */
+.btn-shop-now {
+    background-color: #ff8a1c !important;
+    color: #ffffff !important;
+    border-radius: 50px !important;
+    padding: 12px 36px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    text-decoration: none;
+    display: inline-block;
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(255, 138, 28, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.btn-shop-now:hover {
+    background-color: #e0740f !important;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 767.98px) {
+    .sale-title {
+        font-size: 30px;
+    }
+
+    .discount-price {
+        font-size: 42px;
+    }
+
+    #sale {
+        min-height: 60vh;
+    }
+}
+
+/* =========================
+   NEWS SECTION
+========================= */
+.news-section {
+    background-color: #ffffff;
+}
+
+/* Header Styling */
+.news-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ff8a1c;
+}
+
+.news-title span {
+    color: #07111f;
+}
+
+.title-underline {
+    width: 50px;
+    height: 3px;
+    background-color: #ff8a1c;
+}
+
+.news-subtitle {
+    max-width: 580px;
+    color: #6c757d;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* News Card Styling */
+.news-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Image Container */
+.news-img-box {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.news-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover .news-img {
+    transform: scale(1.05);
+}
+
+/* Content Styling */
+.news-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #07111f;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.news-meta {
+    font-size: 12px;
+    color: #888888;
+}
+
+.news-excerpt {
+    font-size: 14px;
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Read More Link */
+.read-more-btn {
+    font-size: 14px;
+    font-weight: 700;
+    color: #07111f;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    margin-top: auto;
+    display: inline-block;
+}
+
+.read-more-btn:hover {
+    color: #ff8a1c;
+}
+
+
+/* =========================
+   Collabrations SECTION
+========================= */
+
+.logo-carousel-section {
+    background-color: #f5f5f5;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+
+.logo-item {
+    height: 120px;
+    padding: 15px;
+}
+
+/* Logo Image Properties */
+.logo-img {
+    max-height: 80px;
+    max-width: 100%;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    /* Keeps all logos in uniform black/grey style */
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+/* Slight hover effect for interactiveness */
+.logo-item:hover .logo-img {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 576px) {
+    .logo-item {
+        height: 90px;
+    }
+
+    .logo-img {
+        max-height: 60px;
+    }
+}
+
+
+
+
+/* =========================
+   Footer SECTION
+========================= */
+
+/* Footer Base Background */
+.footer-section {
+    background-color: #051922;
+    color: #99a9b5;
+    font-size: 14px;
+    padding-top: 100px;
+}
+
+/* Titles and Underlines */
+.widget-title {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.title-line {
+    width: 25px;
+    height: 2px;
+    background-color: #f28123;
+}
+
+/* Text and Lists Styling */
+.footer-text {
+    line-height: 1.8;
+    color: #99a9b5;
+}
+
+.contact-info li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #99a9b5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-links a i {
+    font-size: 11px;
+    color: #f28123;
+}
+
+.footer-links a:hover {
+    color: #f28123;
+}
+
+/* Subscribe Form Input + Button */
+.subscribe-form {
+    background-color: #01121b;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.subscribe-form input {
+    background: transparent;
+    border: none;
+    padding: 12px 15px;
+    color: #ffffff;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+}
+
+.subscribe-form input::placeholder {
+    color: #556875;
+}
+
+.subscribe-form button {
+    background: transparent;
+    border: none;
+    padding: 0 18px;
+    color: #f28123;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+    color: #ffffff;
+}
+
+/* Copyright & Sub-Footer Separator */
+.copyright-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.copyright-text {
+    color: #99a9b5;
+    font-size: 14px;
+}
+
+.copyright-text a {
+    color: #f28123;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.copyright-text a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons a {
+    color: #99a9b5;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f28123;
+}
+.container, .container-fluid {
+    overflow: hidden; }
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+h1, h2, .big-heading {
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    word-break: break-word;
+}
