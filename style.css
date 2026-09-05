@@ -875,7 +875,7 @@ h1 span {
 .logo-carousel-section {
     background-color: #f5f5f5;
     margin-top: 150px;
-    margin-bottom: 150px;
+
 }
 
 
@@ -1041,8 +1041,11 @@ h1 span {
 .social-icons a:hover {
     color: #f28123;
 }
-.container, .container-fluid {
-    overflow: hidden; }
+
+.container,
+.container-fluid {
+    overflow: hidden;
+}
 
 .row {
     --bs-gutter-x: 1.5rem;
@@ -1050,7 +1053,351 @@ h1 span {
     margin-left: 0 !important;
 }
 
-h1, h2, .big-heading {
+h1,
+h2,
+.big-heading {
     font-size: clamp(1.75rem, 4vw, 3rem);
     word-break: break-word;
+}
+
+
+
+/* ========================== 
+About section 
+============================*/
+
+.custom-hero-section {
+    background-color: #374b55;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content h1 {
+    font-size: clamp(2.25rem, 5vw + 1rem, 3.5rem) !important;
+}
+
+.hero-content {
+    flex-grow: 1;
+    padding-bottom: 3rem;
+}
+
+
+.text-warning {
+    color: #f38120 !important;
+
+}
+
+
+.letter-spacing {
+    letter-spacing: 9px;
+    font-size: 0.85rem;
+}
+
+/* Hover effects for Links */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f38120 !important;
+}
+
+
+/* ------------Why choose us--------------- */
+
+.section-title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    color: #051922;
+}
+
+.text-orange {
+    color: #f38120 !important;
+}
+
+
+.feature-icon-box {
+    width: 65px;
+    height: 65px;
+    min-width: 65px;
+    border: 2px dashed #f38120;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f38120;
+    font-size: 1.25rem;
+    background-color: transparent;
+}
+
+
+.feature-section p {
+    line-height: 1.6;
+    color: #555555;
+}
+
+
+.feature-img-wrapper img {
+    min-height: 380px;
+}
+
+/* ----------Our Team----------- */
+/* Title & Accent Border */
+.team-title {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    color: #051922;
+}
+
+.title-border {
+    width: 50px;
+    height: 3px;
+    background-color: #f38120;
+}
+
+.team-img-wrapper img {
+    height: 380px;
+    object-fit: cover;
+}
+
+.social-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+/* Orange Circular Social Icons */
+.social-icon {
+    width: 35px;
+    height: 35px;
+    background-color: #f38120;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #051922;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* Tables General Header Styling */
+.cart-table thead th,
+.cart-total-table thead th {
+    background-color: #efefef !important;
+    color: #6c6c6c;
+    font-weight: 600;
+    padding: 15px;
+    border-bottom: none;
+}
+
+.cart-table td,
+.cart-total-table td {
+    padding: 15px;
+    color: #555555;
+    height: max-content;
+
+}
+
+/* Image Thumbnail in Table */
+.cart-table .product-img img {
+    max-width: 50px;
+    height: auto;
+}
+
+/* Delete Cross Icon */
+.product-remove a {
+    color: #051922;
+    font-size: 1.1rem;
+    transition: color 0.2s ease;
+}
+
+.product-remove a:hover {
+    color: #f38120;
+}
+
+/* Quantity Input Box */
+.cart-qty-input {
+    max-width: 70px;
+    border-color: #e5e5e5;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+/* Orange Custom Buttons */
+.btn-orange {
+    background-color: #f38120;
+    color: #ffffff !important;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-orange:hover {
+    background-color: #051922;
+    color: #ffffff !important;
+}
+
+/* Coupon Input Focus */
+.coupon-box .form-control {
+    border-color: #e5e5e5;
+    border-radius: 5px;
+}
+
+.coupon-box .form-control:focus,
+.cart-qty-input:focus {
+    border-color: #f38120;
+    box-shadow: none;
+}
+
+.padding {
+    padding-top: 200px;
+}
+
+.heading-decor {
+    padding-top: 100px;
+    font-weight: 800;
+    color: #051922;
+}
+
+.contact-p {
+    line-height: 25px;
+    color: #1e1a44;
+    margin-top: 15px;
+}
+
+
+
+
+
+/* Contact Form Section CSS */
+.contact-form {
+    width: 100%;
+    max-width: 650px;
+}
+
+/* 2-Column Grid Layout */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.full-width {
+    margin-bottom: 25px;
+}
+
+/* Inputs & Textarea */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #333333;
+    outline: none;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+/* Placeholders */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #8c8c8c;
+    font-size: 14px;
+}
+
+/* Focus Border */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #f37d1d;
+}
+
+/* Textarea Height */
+.contact-form textarea {
+    resize: vertical;
+    min-height: 180px;
+}
+
+/* Orange Pill Button */
+.contact-form .submit-btn {
+    background-color: #f37d1d;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Responsive Mobile Layout */
+@media (max-width: 550px) {
+    .contact-form .form-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
+
+
+
+/* Contact Info Section Styling */
+.contact-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  max-width: 400px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Orange Icon Styling */
+.info-icon {
+  color: #f37d1d;
+  font-size: 28px;
+  line-height: 1;
+  padding-top: 2px;
+}
+
+.info-text h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #051922;
+  margin-bottom: 12px;
+  letter-spacing: -0.3px;
+}
+
+.info-text p {
+  font-size: 15px;
+  color: #555555;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+.info{
+    margin-top: 120px;
+    background-color: #FBFBFB ;
+    padding: 25px 16px;
+}
+.contact-footer{
+    margin-top: 60px;
 }
